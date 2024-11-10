@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Static Resume Builder</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Builder</h1>
+    <form id="resume-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="job-title">Job Title:</label>
+      <input type="text" id="job-title" required />
+
+      <label for="summary">Summary:</label>
+      <textarea id="summary" required></textarea>
+
+      <label for="skills">Skills (comma-separated):</label>
+      <input type="text" id="skills" required />
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div class="resume-output" id="resume-output">
+      <!-- Resume preview will be displayed here -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
